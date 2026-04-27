@@ -285,8 +285,7 @@ function AdminDashboard() {
 
               {s.photo && (
                 <img
-                  src={`http://localhost:8080/uploads/${s.photo}`}
-                  alt="student"
+                  src={`https://smart-student-service-production-5060.up.railway.app/uploads/${s.photo}`}                  alt="student"
                   className={styles.studentImage}
                 />
               )}
