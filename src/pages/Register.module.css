@@ -1,0 +1,138 @@
+/* 🌌 Background */
+.registerPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  font-family: "Poppins", sans-serif;
+}
+
+/* 📦 Card */
+.registerCard {
+  width: 380px;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+  animation: fadeIn 0.6s ease;
+}
+
+/* 🧾 Header */
+.registerHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registerHeader h2 {
+  color: #fff;
+}
+
+.registerHeader p {
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+/* 📋 Form */
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 🧠 Group */
+.registerGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerGroup label {
+  font-size: 13px;
+  color: #f1f1f1;
+  margin-bottom: 5px;
+}
+
+.registerGroup input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.registerGroup input:focus {
+  box-shadow: 0 0 0 2px #38bdf8;
+}
+
+/* 🔘 Button */
+.registerBtn {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.registerBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 114, 255, 0.4);
+}
+
+/* 🚨 Error */
+.errorText {
+  color: #ff6b6b;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* ✅ Success */
+.successText {
+  color: #4ade80;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* 👇 Footer */
+.registerFooter {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.registerFooter p {
+  color: #eee;
+  font-size: 13px;
+}
+
+.registerFooter span {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+}
+
+.registerFooter span:hover {
+  text-decoration: underline;
+}
+
+/* 🎬 Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

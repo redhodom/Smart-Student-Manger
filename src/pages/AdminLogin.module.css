@@ -1,0 +1,134 @@
+/* 🌌 Dark Background */
+.adminPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: "Poppins", sans-serif;
+}
+
+/* 📦 Card */
+.adminCard {
+  width: 360px;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+
+  animation: fadeIn 0.5s ease;
+}
+
+/* 🧾 Header */
+.adminHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.adminHeader h2 {
+  color: #ffffff;
+}
+
+.adminHeader p {
+  color: #bbbbbb;
+  font-size: 13px;
+}
+
+/* 📋 Form */
+.adminForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 🧠 Group */
+.adminGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.adminGroup label {
+  font-size: 13px;
+  color: #dddddd;
+  margin-bottom: 5px;
+}
+
+.adminGroup input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+
+  transition: 0.3s;
+}
+
+.adminGroup input:focus {
+  box-shadow: 0 0 0 2px #60a5fa;
+}
+
+/* 🔘 Button */
+.adminBtn {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.adminBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(59, 130, 246, 0.4);
+}
+
+/* 🚨 Error */
+.errorText {
+  color: #f87171;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* 👇 Footer */
+.adminFooter {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.adminFooter p {
+  color: #ccc;
+  font-size: 13px;
+}
+
+.adminFooter span {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+}
+
+.adminFooter span:hover {
+  text-decoration: underline;
+}
+
+/* 🎬 Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
