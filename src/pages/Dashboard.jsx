@@ -131,7 +131,7 @@ function Dashboard() {
           <div className={styles.cardHeader}>
             {student.photo && (
               <img
-                src={`http://localhost:8080/uploads/${student.photo}`}
+                src={`https://smart-student-service-production.up.railway.app/uploads/${student.photo}`}
                 alt="student"
                 className={styles.profileImage}
               />
